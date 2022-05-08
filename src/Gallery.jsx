@@ -43,13 +43,34 @@ const Gallery = () => {
                                         </Container>  
                                     </HStack>
                                     <HStack>
-                                        Lunch
+                                        <Container maxW="container.sm">
+                                            Lunch
+                                            <Flex w="50vw" h="50vh"
+                                                bg="teal.200">
+                                                <img src="assets/img1.jpg" w="20vw" h="20vh" alt="" className="src" />
+                                                <p>MAggi</p>
+                                            </Flex>
+                                        </Container> 
                                     </HStack>
                                     <HStack>
-                                        Lunch
+                                        <Container maxW="container.sm">
+                                            Lunch
+                                            <Flex w="50vw" h="50vh"
+                                                bg="teal.200">
+                                                <img src="assets/img1.jpg" w="20vw" h="20vh" alt="" className="src" />
+                                                <p>MAggi</p>
+                                            </Flex>
+                                        </Container> 
                                     </HStack>
                                     <HStack>
-                                        Lunch
+                                        <Container maxW="container.sm">
+                                            Lunch
+                                            <Flex w="50vw" h="50vh"
+                                                bg="teal.200">
+                                                <img src="assets/img1.jpg" w="20vw" h="20vh" alt="" className="src" />
+                                                <p>MAggi</p>
+                                            </Flex>
+                                        </Container> 
                                     </HStack>
                                 </VStack>
                         </VStack>
