@@ -11,8 +11,7 @@ const Content = () => {
         baths: 2,
         title: 'Jack Daniels',
         formattedPrice: '$1,900.00',
-        reviewCount: 34,
-        rating: 4,
+        
     }
   
   return (
