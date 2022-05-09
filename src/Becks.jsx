@@ -1,22 +1,25 @@
 import React from 'react'
 import { Box, Image, Badge } from '@chakra-ui/react'
 import { StarIcon } from '@chakra-ui/icons'
+import { motion } from 'framer-motion'
 
 
-const Content = () => {
+const Becks = () => {
     const property = {
-        imageUrl: 'https://static.turbosquid.com/Preview/2019/06/28__11_12_46/A.jpgE6A8F7E3-3558-4AA6-8838-A73EA2612580Large.jpg',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/xxl/40201228_3-becks-ice-strong-100-malt-beer.jpg',
         imageAlt: 'Jack Daniels Liquor Section',
         beds: 3,
         baths: 2,
-        title: 'Jack Daniels',
+        title: 'Becks Ice',
         formattedPrice: '$1,900.00',
         reviewCount: 34,
         rating: 4,
     }
   
   return (
-    <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' boxShadow='lg'>
+    <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' boxShadow='lg'
+        // whilehover={{ scale: 1.5}}
+        >
         
       <Image src={property.imageUrl} alt={property.imageAlt} />
 
@@ -73,7 +76,7 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Becks;
 
 // https://www.bigbasket.com/media/uploads/p/l/40218157_3-bira-original-91-white-beer.jpg
-// https://i0.wp.com/liquorgenie.in/wp-content/uploads/2020/08/Bira-Boom-Qt.jpg?fit=500%2C500&ssl=1
+// https://i0.wp.com/liquorgenie.in/wp-content/uploads/2020/08/Bira-Boom-Qt.jpg?fit=500%2C500&ssl=1https://www.bigbasket.com/media/uploads/p/xxl/40201228_3-becks-ice-strong-100-malt-beer.jpg

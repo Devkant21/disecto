@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Menu from './features/menu';
 import { Container, VStack, Stack, Flex, Button, Heading, HStack } from '@chakra-ui/react';
 import Content from './Content';
+import Whiskey from './Whiskey';
+import Beer from './Beer';
+import Becks from './Becks'
 
 
 const Gallery = () => {
@@ -36,11 +39,11 @@ const Gallery = () => {
                     <VStack>
                         <HStack>
                             <Content />
-                            <Content />
-                            <Content />
+                            <Whiskey />
+                            <Beer />
                         </HStack>
                         <HStack>
-                            <Content />
+                            <Becks />
                             <Content />
                             <Content />
                         </HStack>
@@ -54,7 +57,7 @@ const Gallery = () => {
                     
                 </VStack>
             </Flex>
-            
+    
         </Container>   
     )
 }

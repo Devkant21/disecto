@@ -3,9 +3,9 @@ import { Box, Image, Badge } from '@chakra-ui/react'
 import { StarIcon } from '@chakra-ui/icons'
 
 
-const Content = () => {
+const Beer = () => {
     const property = {
-        imageUrl: 'https://static.turbosquid.com/Preview/2019/06/28__11_12_46/A.jpgE6A8F7E3-3558-4AA6-8838-A73EA2612580Large.jpg',
+        imageUrl: 'https://i0.wp.com/liquorgenie.in/wp-content/uploads/2020/08/Bira-Boom-Qt.jpg?fit=500%2C500&ssl=1',
         imageAlt: 'Jack Daniels Liquor Section',
         beds: 3,
         baths: 2,
@@ -73,7 +73,7 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Beer;
 
 // https://www.bigbasket.com/media/uploads/p/l/40218157_3-bira-original-91-white-beer.jpg
 // https://i0.wp.com/liquorgenie.in/wp-content/uploads/2020/08/Bira-Boom-Qt.jpg?fit=500%2C500&ssl=1
