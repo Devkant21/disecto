@@ -16,16 +16,16 @@ const Gallery = () => {
     }
 
     return (
-        <Container maxW="container.xl" padding="10" bg="white" >
-            <Flex h="full">
+        <Container maxW="full" maxH="full" padding="10" bg="gray.100" >
+            <Flex h="full" w="full">
                 <VStack 
                     w="full" 
                     h="full" 
                     p="10" 
                     spacing={10} 
-                    align="center"
+                    
                 >
-                    <VStack spacing={5} >
+                    <VStack spacing={5} align="center">
                         <Heading fontStyle="normal"> Shopping Items
                             <Stack direction='row' spacing={4} py={5} align='center'>
                                 <Button colorScheme='green' variant='outline' onClick={() => filterItem('Groceries')}>
@@ -47,45 +47,49 @@ const Gallery = () => {
                         </Heading>
                     </VStack>
                     <VStack>
-                        <HStack>
-                            <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' boxShadow='lg'> 
-                            {
-                                items.map((elem) => {
-                                    const {id, image, name, category, price} = elem;
-                                    return (
-                                        <>
-                                            <Image src={image} alt={name} />
-                                            <Box p='6'>
-                                                <Box display='flex' alignItems='baseline'>
-                                                {/* <Badge borderRadius='full' px='2' colorScheme='orange'>
-                                                    New {name}
-                                                </Badge> */}
-                                                <Badge borderRadius='full' px='2' colorScheme='orange'>
-                                                    {category}
-                                                </Badge>
-                                                <Box
-                                                mt='1'
-                                                fontWeight='semibold'
-                                                as='h4'
-                                                lineHeight='tight'
-                                                isTruncated
-                                                >   
-                                                {name}
-                                                </Box>
-                                                </Box>
-                                                
-                                                <Box>
-                                                {price}
-                                                <Box as='span' color='gray.600' fontSize='sm'>
-                                                </Box>
-                                                </Box>
-                                            </Box>  
-                                        </> 
-                                    )   
-                                })
-                            } 
-                            </Box>     
-                        </HStack>
+                        <VStack maxH="full" flexDirection="row" align="flex-start" spacing={4} py={5} justifyContent="space-between">
+                            <Flex maxW='md' borderWidth='4px' borderRadius='md'  boxShadow='lg'spacing={4} justifyContent="space-between" >
+                                <Box maxW='sm' borderWidth='1px' borderRadius='sm'  direction='row' justifyContent="space-between">
+                                    <VStack direction='row' justifyContent="space-between">
+                                    {
+                                    items.map((elem) => {
+                                        const {id, image, name, category, price} = elem;
+                                        return (
+                                            <>
+                                                <Image src={image} alt={name} align="flex-start"/>
+                                                <Box p='6'>
+                                                    <Box display='flex' alignItems='baseline' direction='row'>
+                                                        <Badge borderRadius='full' px='2' colorScheme='orange'>
+                                                            New 
+                                                        </Badge>
+                                                        <Badge borderRadius='full' px='2' colorScheme='orange'>
+                                                            {category}
+                                                        </Badge>
+                                                        <Box
+                                                            mt='1'
+                                                            fontWeight='semibold'
+                                                            as='h4'
+                                                            lineHeight='tight'
+                                                            isTruncated
+                                                            >   
+                                                            {name}
+                                                        </Box>
+                                                    </Box>
+                                                    <Box>
+                                                    {price}
+                                                    <Box as='span' color='gray.600' fontSize='sm'>
+                                                        INR
+                                                    </Box>
+                                                    </Box>
+                                                </Box>  
+                                            </> 
+                                        )   
+                                    })
+                                } 
+                                    </VStack>
+                                </Box>       
+                            </Flex>
+                        </VStack>
                     </VStack>     
                 </VStack>
             </Flex>
