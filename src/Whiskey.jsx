@@ -3,13 +3,13 @@ import { Box, Image, Badge } from '@chakra-ui/react'
 import { StarIcon } from '@chakra-ui/icons'
 
 
-const Content = () => {
+const Whiskey = () => {
     const property = {
-        imageUrl: 'https://static.turbosquid.com/Preview/2019/06/28__11_12_46/A.jpgE6A8F7E3-3558-4AA6-8838-A73EA2612580Large.jpg',
-        imageAlt: 'Jack Daniels Liquor Section',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/l/40218157_3-bira-original-91-white-beer.jpg',
+        imageAlt: 'Bira beer Liquor Section',
         beds: 3,
         baths: 2,
-        title: 'Jack Daniels',
+        title: 'Bira',
         formattedPrice: '$1,900.00',
         reviewCount: 34,
         rating: 4,
@@ -73,7 +73,6 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Whiskey
 
 // https://www.bigbasket.com/media/uploads/p/l/40218157_3-bira-original-91-white-beer.jpg
-// https://i0.wp.com/liquorgenie.in/wp-content/uploads/2020/08/Bira-Boom-Qt.jpg?fit=500%2C500&ssl=1
